@@ -31,5 +31,73 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0;
+	min-height: 100vh;
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	line-height: 1.5
 }
 
+main {
+	width: 100%;
+}
+
+header {
+	padding: 30 0;
+	display: flex;
+}
+
+header img {
+	width: 170px;
+}
+
+header ul {
+	display: flex;
+	text-align: right;
+}
+
+header ul li {
+	display: flex;
+
+}
+
+header ul li a {
+	text-decoration: none;
+	color: #242424;
+	padding: 10px 15px;
+	border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a:focus {
+	background-color: #f195b2;
+}
+
+h1, h2, h3 {
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	line-height: 1.25
+}
+
+h1 {	
+	font-size: 56px;	
+}
+
+h2 {
+	font-size: 36px;
+}
+
+footer {
+	padding: 30px 0;
+	background-color: #303339;
+	color: white;
+	text-align: center;
+}
+
+.hero-section {
+	background: no-repeat url("images/cupcake.jpg");
+	background-size: cover;
+	width: 1100px;
+	font-size: 24px;
+	color: white;
+	padding: 80px 0;
+}
