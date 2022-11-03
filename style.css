@@ -1,7 +1,12 @@
 /* intuitivnější box-sizing pro všechny prvky na stránce */
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
 
 /*
 	Poznámky:
@@ -28,76 +33,138 @@ html { box-sizing: border-box; }
 	#303339		tmavé pozadí patičky
 */
 
-
+/* global styles */
 body {
-	margin: 0;
-	min-height: 100vh;
-	font-family: 'Lora', serif;
-	font-size: 18px;
-	line-height: 1.5
+  margin: 0;
+  min-height: 100vh;
+  color: #242424;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-main {
-	width: 100%;
+section {
+  width: 100%;
+  padding: 80px 0;
 }
 
-header {
-	padding: 30 0;
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+h2,
+h3 {
+  color: #3e606b;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+/*layout */
+.content-width-container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.header-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.welcome-section-content-container {
 	display: flex;
+	flex-direction: row;
+}
+
+/* header */
+header {
+  padding: 30 0;
 }
 
 header img {
-	width: 170px;
+  width: 170px;
+  display: block;
+  text-align: left;
 }
 
 header ul {
-	display: flex;
-	text-align: right;
+  display: flex;
+  text-align: right;
 }
 
 header ul li {
-	display: flex;
-
+  display: flex;
 }
 
 header ul li a {
-	text-decoration: none;
-	color: #242424;
-	padding: 10px 15px;
-	border-radius: 20px;
+  text-decoration: none;
+  color: #242424;
+  padding: 10px 15px;
+  border-radius: 20px;
 }
 
 header ul li a:hover,
 header ul li a:focus {
-	background-color: #f195b2;
+  background-color: #f195b2;
+  color: white;
 }
 
-h1, h2, h3 {
-	font-family: 'Playfair Display', serif;
-	font-weight: bold;
-	line-height: 1.25
-}
-
-h1 {	
-	font-size: 56px;	
-}
-
-h2 {
-	font-size: 36px;
-}
-
+/* footer */
 footer {
-	padding: 30px 0;
-	background-color: #303339;
-	color: white;
-	text-align: center;
+  padding: 30px 0;
+  background-color: #303339;
+  color: white;
+  text-align: center;
 }
 
+/* Hero section */
 .hero-section {
-	background: no-repeat url("images/cupcake.jpg");
-	background-size: cover;
-	width: 1100px;
-	font-size: 24px;
-	color: white;
-	padding: 80px 0;
+  background: no-repeat url("images/cupcake.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.hero-section p {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.hero-text-container {
+  width: 60%;
+}
+
+/* welcome-section */
+.welcome-section-left-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+.our-products-link {
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color: #f195b2;
+  color: white;
+  border-radius: 30px;
+  width: 50%;
+}
+
+.our-products-link:hover,
+.our-products-link:focus {
+  background-color: #d2567d;
+}
+
+.welcome-section-image {
+	border-radius: 5px;
+	margin: 30px;
 }
