@@ -83,11 +83,11 @@ h2 {
 }
 
 .welcome-section-content-container {
-	display: flex;
+  display: flex;
 }
 
 .bake-section-content-container {
-	display: flex;
+  display: flex;
 }
 
 /* header */
@@ -123,14 +123,6 @@ header ul li a:focus {
   color: white;
 }
 
-/* footer */
-footer {
-  padding: 30px 0;
-  background-color: #303339;
-  color: white;
-  text-align: center;
-}
-
 /* Hero section */
 .hero-section {
   background: no-repeat url("images/cupcake.jpg");
@@ -150,11 +142,11 @@ footer {
 
 /* welcome-section */
 .welcome-section-left-column {
-	display: flex;
-	flex-direction: column;
-	justify-content: stretxh;
-	width: 550px;
-	margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretxh;
+  width: 550px;
+  margin: 30px 0;
 }
 
 .our-products-link {
@@ -173,25 +165,60 @@ footer {
 }
 
 .welcome-section-image {
-	width: 550px;
-	border-radius: 5px;
-	margin-left: 30px;
+  width: 550px;
+  border-radius: 5px;
+  margin-left: 30px;
 }
 
 /* current offer section */
 .current-offer-section {
-	background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
+.current-offer-products {
+  display: flex;
+}
 
+.product {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.product:nth-child(1) {
+  margin-left: 0;
+}
+
+.product-image {
+  display: block;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-text {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
 
 /* bake section */
 .bake-section-image {
-	border-radius: 5px;
-	width: 550px;
+  border-radius: 5px;
+  width: 550px;
 }
 
 .bake-section-left-column {
-	width: 550px;
-	padding: 30px;;
+  width: 550px;
+  padding: 30px;
+}
+
+/* footer */
+footer {
+  padding: 30px 0;
+  background-color: #303339;
+  color: white;
+  text-align: center;
 }
